@@ -1,0 +1,78 @@
+.welcomeBox{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, aqua);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.welcomeBox h3{
+    font-size: 5rem;
+    font-weight: 500;
+    color: aqua;
+    margin: 4rem 0rem 2rem;
+}
+.welcomeBox h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(0, 255, 255, 0.708);
+    margin: 4rem 0rem 2rem;
+}
+.welcomeBox button{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-color: azure;
+    border-color: var(--box-shadow-color, aqua);
+    height: 4rem;
+    width: 15rem;
+    border-radius: 0.4rem;
+    transition: 0.3s transform ease-in-out, 0.3s box-shadow ease-in-out;
+    bottom: 10%;
+    left: 50%;        /* move to horizontal center */
+    translate: -50%;
+    font-size: 1rem;
+    font-weight: 600;
+    
+
+}
+.welcomeBox button:hover{
+    /* transform: scale(1.02); */
+    box-shadow: 0 0 0.2rem 0.1rem var(--box-shadow-color, aqua);
+    animation: pulse 0.8s ease-in-out;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  25% {transform: scale(1.025);}
+  50% { transform: scale(1.05); }
+  75% {transform: scale(1.025);}
+  100% { transform: scale(1); }
+}
+@media (max-width: 800px) {
+    .welcomeBox h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: aqua;
+    margin: 4rem 0rem 2rem;
+}
+.welcomeBox h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(0, 255, 255, 0.708);
+    margin: 4rem 0rem 2rem;
+}
+.welcomeBox{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    box-sizing: border-box;
+    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, aqua);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+}

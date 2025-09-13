@@ -1,0 +1,52 @@
+.sourceSelectBox{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, aqua);
+    border-radius: 0.4rem;
+}
+.sourceSelectBox h2{
+    font-size: 5rem;
+    font-weight: 500;
+    color: aqua;
+    margin: 4rem 0rem 2rem;
+}
+.sourceSelectBox #b{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-color: azure;
+    border-color: var(--box-shadow-color, aqua);
+    height: 4rem;
+    width: 15rem;
+    border-radius: 0.4rem;
+    transition: 0.3s transform ease-in-out, 0.3s box-shadow ease-in-out;
+    bottom: 3rem;
+    left: 4rem;
+}
+.sourceSelectBox #n{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-color: azure;
+    border-color: var(--box-shadow-color, aqua);
+    height: 4rem;
+    width: 15rem;
+    border-radius: 0.4rem;
+    transition: 0.3s transform ease-in-out, 0.3s box-shadow ease-in-out;
+    bottom: 3rem;
+    right: 4rem;
+}
+.sourceSelectBox button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 0.2rem 0.1rem var(--box-shadow-color, aqua);
+    animation: pulse 0.8s ease-in-out;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  25% {transform: scale(1.025);}
+  50% { transform: scale(1.05); }
+  75% {transform: scale(1.025);}
+  100% { transform: scale(1); }
+}
