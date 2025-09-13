@@ -80,7 +80,4 @@ Feel free to open an [issue](../../issues) or submit a PR.
 
 ## 📜 License
 
-This project is licensed under the **MIT License** – see [LICENSE](LICENSE) for details.
-
-```
-
+This project is licensed under the **Apache License  2.0 GNU** – see [Apache License 2.0](LICENSE) for details.
