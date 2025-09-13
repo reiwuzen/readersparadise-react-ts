@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "../../styles/home/tabManager.css";
-import HomeTab from "./homeTab/homeTab";
+import "../../../styles/home/tabManager.css";
+import HomeTab from "../homeTab/homeTab";
 import Tab from "./l1/tab";
-import Home from "../home";
+import Home from "../../home";
 
 const TabManager = () => {
   const [tabs, setTabs] = useState([{ id: 1, name: "Home" }]);
@@ -14,7 +14,7 @@ const TabManager = () => {
     setActiveTab(newId);
   };
 
-  const closeTab = (id:number) => {
+  const closeTab = (id: number) => {
     // prevent closing the last tab
     if (tabs.length === 1) return;
 

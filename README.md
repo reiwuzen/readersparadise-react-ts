@@ -1,7 +1,16 @@
-# Tauri + React + Typescript
+# ReadersParadise
+It is made using **Tauri** + **React** + **Typescript**.
+ - A manga / novel / manhua / manhwa / manga reader.
+ - Available for PC only (yet).
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Requirements to run this src code on your pc
+ - rust installed.
+ - pnpm installed.
+
+## TO RUN
+``` 
+pnpm install
+pnpm tauri dev
+```
