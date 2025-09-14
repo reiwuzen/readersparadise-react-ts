@@ -1,32 +1,55 @@
+
 .welcomeBox{
     position: relative;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     box-sizing: border-box;
-    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, aqua);
-    border-radius: 0.4rem;
+    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, rgb(0, 0, 0));
+    border-radius: 25% 5%;
     display: flex;
     flex-direction: column;
+    background-color: black;
     
 }
+
+.welcomeBox {
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+  }
+}
+
+
 .welcomeBox h3{
     font-size: 5rem;
     font-weight: 500;
-    color: aqua;
+    color: rgb(255, 255, 255);
     margin: 4rem 0rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .welcomeBox h4 {
     font-size: 1.6rem;
     font-weight: 600;
-    color: rgba(0, 255, 255, 0.708);
+    color: rgba(78, 173, 233, 0.708);
     margin: 4rem 0rem 2rem;
 }
+
+/* From Uiverse.io by alexroumi */ 
 .welcomeBox button{
     position: absolute;
     cursor: pointer;
     border: none;
     background-color: azure;
-    border-color: var(--box-shadow-color, aqua);
+    border-color: var(--box-shadow-color, rgb(56, 255, 255));
     height: 4rem;
     width: 15rem;
     border-radius: 0.4rem;
@@ -44,6 +67,13 @@
     box-shadow: 0 0 0.2rem 0.1rem var(--box-shadow-color, aqua);
     animation: pulse 0.8s ease-in-out;
 }
+
+.welcomeBox button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px 5px cyan;
+}
+
+
 @keyframes pulse {
   0% { transform: scale(1); }
   25% {transform: scale(1.025);}
@@ -51,13 +81,15 @@
   75% {transform: scale(1.025);}
   100% { transform: scale(1); }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 800px) {}
     .welcomeBox h3{
     font-size: 4rem;
     font-weight: 500;
     color: aqua;
     margin: 4rem 0rem 2rem;
 }
+
 .welcomeBox h4 {
     font-size: 1.6rem;
     font-weight: 600;
@@ -66,13 +98,13 @@
 }
 .welcomeBox{
     position: relative;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     box-sizing: border-box;
-    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, aqua);
-    border-radius: 0.4rem;
+    box-shadow: 0 0 1rem 1rem var(--box-shadow-color, rgb(0, 0, 0));
+    border-radius: 25% 5%;
     display: flex;
     flex-direction: column;
+    background-color: black;
     
-}
-}
+} 
