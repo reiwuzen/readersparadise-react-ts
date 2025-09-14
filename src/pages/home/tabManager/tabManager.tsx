@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "../../../styles/home/tabManager.css";
+import '../../../styles/home/tabManager/tabManager.css'
 import HomeTab from "../homeTab/homeTab";
 import Tab from "./l1/tab";
-import Home from "../../home";
 
 const TabManager = () => {
   const [tabs, setTabs] = useState([{ id: 1, name: "Home" }]);
@@ -10,7 +9,7 @@ const TabManager = () => {
 
   const addTab = () => {
     const newId = Date.now();
-    setTabs([...tabs, { id: newId, name: `Tab ${tabs.length + 1}` }]);
+    setTabs([...tabs, { id: newId, name: `Home` }]);
     setActiveTab(newId);
   };
 

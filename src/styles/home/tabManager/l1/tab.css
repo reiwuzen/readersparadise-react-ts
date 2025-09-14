@@ -5,17 +5,21 @@
     justify-self: flex-end;
     justify-content: space-between;
     text-align: center;
-    min-width: 4rem;
+    min-width: 10rem;
     width: auto;
-    max-width: 5rem;
-    background-color: aqua;
+    max-width: 10rem;
     text-overflow: ellipsis;
+    background-color: none;
     border-radius: 1rem 1rem 0rem 0rem;
     padding: 0 0.5rem 0;
-    border-bottom: 2px solid;
-    border-color: rgb(0, 0, 0);
+    
     cursor: pointer;
     height: 80%;
+}
+.active{
+    background-color: aqua;
+    border-bottom: 2px solid;
+    border-color: rgb(0, 0, 0);
 }
 .tab button{
     border: none;
@@ -34,4 +38,11 @@
 }
 .tab button:hover{
     background-color: rgba(255, 255, 255, 0.674);
+}
+@media (max-width: 800px){
+    .tab{
+        min-width: 100px;
+        width: auto;
+        max-width: 100px;
+    }
 }

@@ -4,6 +4,7 @@ import Navbar from "./navbar/navbar";
 const Home = () => {
   return (
     <div className="homeBox">
+      <div className="overlay"></div>
       <Navbar />
       <TabManager />
     </div>

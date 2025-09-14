@@ -4,6 +4,7 @@
     width: 100%;
     background-color: var(--nav-N-tab-color);
     flex-shrink: 0;
+    z-index: 5;
     /* box-shadow: 0 0px 0.2rem 0rem aquamarine; */
 }
 .navbar h3{
@@ -12,15 +13,65 @@
     color: aliceblue;
 }
 .navbar .hamburgerIcon{
+    z-index: 2;
     color: aliceblue;
     position: absolute;
-    top: 3%;
-    left: 0.4%;
+    top: 2px;
+    left: 3px;
     cursor: pointer;
     border: none;
-    padding: 0.2%;
+    padding: 2px;
 }
 .navbar .hamburgerIcon:hover{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30%;
+}
+.navbar .navbarSideBar{
+    height: 800px;
+    background-color: blueviolet;
+    width: 30%;
+    max-width: 30%;
+    position: fixed;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    /* display: none; */
+}
+.navbar .navbarSideBar .navbarSideBarList{
+    margin: 8rem 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+}
+.navbar .navbarSideBar .navbarSideBarList li{
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    height: 3rem;
+    list-style: none;
+    align-self: center;
+    justify-self: center;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .navbarSideBar .navbarSideBarList li:hover{
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, 0.639);
+    cursor: pointer;
+}
+.navbar .navbarSideBar.open{
+     transform: translateX(0);
+}
+.navbar .navbarSideBar.closed{
+    transform: translateX(-100%);
+}
+@media (max-height: 600px){
+    .navbar .navbarSideBar{
+    max-height: 600px;
+    background-color: blueviolet;
+    width: 250px;
+    max-width: 250px;
+    position: fixed;
+}
 }
