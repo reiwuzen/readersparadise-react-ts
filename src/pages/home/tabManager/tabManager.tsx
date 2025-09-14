@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../../styles/home/tabManager.css";
+import '../../../styles/home/tabManager/tabManager.css';
 import HomeTab from "../homeTab/homeTab";
 import Tab from "./l1/tab";
 import Home from "../../home";
