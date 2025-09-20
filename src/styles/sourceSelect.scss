@@ -31,8 +31,6 @@
     border: none;
     background-color: azure;
     border-color: var(--box-shadow-color, aqua);
-    height: 4rem;
-    width: 15rem;
     border-radius: 0.4rem;
     transition: 0.3s transform ease-in-out, 0.3s box-shadow ease-in-out;
     bottom: 3rem;
@@ -45,8 +43,6 @@
     border: none;
     background-color: azure;
     border-color: var(--box-shadow-color, aqua);
-    height: 4rem;
-    width: 15rem;
     border-radius: 0.4rem;
     transition: 0.3s transform ease-in-out, 0.3s box-shadow ease-in-out;
     bottom: 3rem;
@@ -58,6 +54,16 @@
       transform: scale(1.02);
       box-shadow: 0 0 0.2rem 0.1rem var(--box-shadow-color, aqua);
       animation: pulse 0.8s ease-in-out;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .sourceSelectBox {
+    width: 70%;
+    height: 70%;
+    button {
+      height: 4rem;
+      width: 8rem;
     }
   }
 }
