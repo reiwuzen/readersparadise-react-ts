@@ -1,8 +1,8 @@
 
 .welcomeBox{
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 80%;
     box-sizing: border-box;
     box-shadow: 0 0 1rem 1rem var(--box-shadow-color, rgb(0, 0, 0));
     border-radius: 25% 5%;
@@ -82,15 +82,16 @@
   100% { transform: scale(1); }
 }
 
-@media (max-width: 800px) {}
-    .welcomeBox h3{
+@media (max-width: 800px) {
+
+  .welcomeBox h3{
     font-size: 4rem;
     font-weight: 500;
     color: aqua;
     margin: 4rem 0rem 2rem;
-}
-
-.welcomeBox h4 {
+  }
+  
+  .welcomeBox h4 {
     font-size: 1.6rem;
     font-weight: 600;
     color: rgba(0, 255, 255, 0.708);
@@ -98,8 +99,8 @@
 }
 .welcomeBox{
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     box-sizing: border-box;
     box-shadow: 0 0 1rem 1rem var(--box-shadow-color, rgb(0, 0, 0));
     border-radius: 25% 5%;
@@ -108,3 +109,5 @@
     background-color: black;
     
 } 
+
+}

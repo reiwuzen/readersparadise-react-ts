@@ -1,24 +1,37 @@
 import { useState } from "react";
-import "../../styles/navbar/navbar.css";
-const Navbar = () => {
-  const [sideBar, setSideBar] =useState(false);
+import "../../styles/navbar/navbar.scss";
+import selectAndList, { type ImageFile } from "../../../helper/fs";
+type NavbarProps = {
+  setImages: React.Dispatch<React.SetStateAction<ImageFile[]>>
+}
+const Navbar = ({setImages}: NavbarProps) => {
+  const [sideBar, setSideBar] = useState(false);
+  
   const ToggleNavbarSideBar = () => {
     setSideBar(!sideBar);
-  }
-  
+  };
+
   return (
     <nav className="navbar">
       {
-      (<div className={`navbarSideBar ${sideBar ? 'open' : 'closed'} `}>
-        <ul className="navbarSideBarList">
-          <li>Home</li>
-          <li>Library</li>
-          <li>Downloads</li>
-          <li>Settings</li>
-        </ul>
-      </div>)
+        <div className={`navbarSideBar ${sideBar ? "open" : "closed"} `}>
+          <ul className="navbarSideBarList">
+            <li>Home</li>
+            <li>Library</li>
+            <li>Downloads</li>
+            <li>Settings</li>
+          </ul>
+        </div>
       }
       <h3>ReadersParadise</h3>
+      <button
+        onClick={async () => {
+          const result = await selectAndList();
+          setImages(result);
+        }}
+      >
+        Test
+      </button>
 
       <svg
         className="hamburgerIcon"
@@ -32,14 +45,11 @@ const Navbar = () => {
         stroke-linecap="round"
         stroke-linejoin="round"
         onClick={ToggleNavbarSideBar}
-        
       >
         <line x1="3" y1="6" x2="21" y2="6" />
         <line x1="3" y1="12" x2="21" y2="12" />
         <line x1="3" y1="18" x2="21" y2="18" />
-        
       </svg>
-      
     </nav>
   );
 };

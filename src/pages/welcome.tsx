@@ -1,4 +1,4 @@
-import '../styles/welcome.css'
+import '../styles/welcome.scss'
 type WelcomeProps = {
     onNext: () => void
 }

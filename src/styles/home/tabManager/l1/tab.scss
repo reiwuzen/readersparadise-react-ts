@@ -16,10 +16,13 @@
     cursor: pointer;
     height: 80%;
 }
+.tab .tabName{
+    color: white;
+}
 .active{
     background-color: aqua;
-    border-bottom: 2px solid;
-    border-color: rgb(0, 0, 0);
+    /* border-bottom: 2px solid; */
+    /* border-color: rgb(0, 0, 0); */
 }
 .tab button{
     border: none;
@@ -36,7 +39,7 @@
 
     
 }
-.tab button:hover{
+.active.tab button:hover{
     background-color: rgba(255, 255, 255, 0.674);
 }
 @media (max-width: 800px){

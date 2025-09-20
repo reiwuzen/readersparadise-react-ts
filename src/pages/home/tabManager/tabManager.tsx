@@ -1,9 +1,12 @@
 import { useState } from "react";
-import '../../../styles/home/tabManager/tabManager.css'
+import '../../../styles/home/tabManager/tabManager.scss'
 import HomeTab from "../homeTab/homeTab";
 import Tab from "./l1/tab";
-
-const TabManager = () => {
+import { ImageFile } from "../../../../helper/fs";
+type TabManagerProps = {
+  images: ImageFile[]
+}
+const TabManager = ({images}:TabManagerProps) => {
   const [tabs, setTabs] = useState([{ id: 1, name: "Home" }]);
   const [activeTab, setActiveTab] = useState(1);
 
@@ -43,7 +46,7 @@ const TabManager = () => {
         </button>
       </div>
       <div className="tabContent">
-        <HomeTab />
+        <HomeTab images={images} />
       </div>
     </div>
   );

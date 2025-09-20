@@ -1,12 +1,15 @@
-import "../styles/home.css";
+import { useState } from "react";
+import "../styles/home.scss";
 import TabManager from "./home/tabManager/tabManager";
 import Navbar from "./navbar/navbar";
+import { ImageFile } from "../../helper/fs";
 const Home = () => {
-  return (
+  const [images, setImages] = useState<ImageFile[]>([]);
+    return (
     <div className="homeBox">
       <div className="overlay"></div>
-      <Navbar />
-      <TabManager />
+      <Navbar setImages={setImages}/>
+      <TabManager images={images}  />
     </div>
   );
 };

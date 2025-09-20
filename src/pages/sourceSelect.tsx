@@ -1,4 +1,4 @@
-import '../styles/sourceSelect.css';
+import '../styles/sourceSelect.scss';
 type SourceSelectProps = {
     onBack : () => void;
     onNext: () => void;

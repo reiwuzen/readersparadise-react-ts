@@ -1,4 +1,4 @@
-import "../styles/storage.css";
+import "../styles/storage.scss";
 
 type StorageProps = {
   onBack: () => void;

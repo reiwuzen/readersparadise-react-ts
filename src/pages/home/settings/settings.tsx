@@ -1,1 +1,1 @@
-import '../../../styles/home/settings/settings.css';const SettingsTab = () => {return(<div className="settingsTab">Settings</div>)}; export default SettingsTab;
+import '../../../styles/home/settings/settings.scss';const SettingsTab = () => {return(<div className="settingsTab">Settings</div>)}; export default SettingsTab;
