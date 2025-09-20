@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .box{
+        position: absolute;inset: 0;
+        width: 500px;
+        height: 500px;
+        background: rgb(43, 152, 140);
+    }
+    .box::after, .box::before{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      height: inherit;
+      width: inherit;
+      inset: -10px;
+      
+      background: conic-gradient(transparent 50%, blue, aqua, aquamarine);
+      border-radius: inherit;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="box">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae harum ad tempore, mollitia est facere vero excepturi necessitatibus non, perspiciatis officia, beatae ipsam minus maiores a dolores omnis? Harum, cupiditate!</h3>
+    </div>
+</div>
+</body>
+</html>

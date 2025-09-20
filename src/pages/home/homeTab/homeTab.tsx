@@ -49,10 +49,13 @@ const HomeTab = ({ images }: { images: ImageFile[] }) => {
           ) : (
             <p>Loading...</p>
           )}
+          <div className="homeTabImageMode">
+            
+          </div>
         </div>
         <div className="homeTabButtonBar">
           {len === 0 ? (
-            <p>NO content yet</p>
+            <p>NO ^ content yet</p>
           ) : (
             <>
               <button onClick={prevImage}>◀ Prev Page</button>
